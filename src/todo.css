@@ -9,7 +9,7 @@ nav.notepad {
 }
 .addtodo {
     font-size: 30px;
-    width: 100%;
+    width: 95%;
     background-color: #FFFFFF;
 }
 .actionstodo {
@@ -24,7 +24,7 @@ nav.notepad {
 }
 .tick::before {
     content: "\2713";
-    color: darkgreen;
+    color: #003d3d;
 }
 .cross,
 .tick {
@@ -35,7 +35,7 @@ nav.notepad {
 }
 .cross:before {
     content: "\2717";
-    color: red;
+    color: #3f0000;
 }
 /* Get one TO DO list with appropriate style */
 
@@ -61,7 +61,7 @@ ul.list {
 
     transform: rotate(-6deg);
     width: 198px;
-    background: #CCF none repeat scroll 0 0;
+    background: rgba(153, 0, 0, 0.6) none repeat scroll 0 0;
 }
 ul.list li.todo span.todotext {
     display: inline-block;

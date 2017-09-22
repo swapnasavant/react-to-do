@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Search from './Search';
-import ToDo from './ToDo';
+import ToDos from './ToDos';
 
 class App extends Component {
   render() {
@@ -11,8 +10,7 @@ class App extends Component {
           <h2>To Do List</h2>
         </div>
         <div className="App-Content">
-            <Search />
-            <ToDo />
+            <ToDos />
         </div>
       </div>
     );
