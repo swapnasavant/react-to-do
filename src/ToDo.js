@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './styles/todo.css';
+import './styles/Todo.css';
 
 class ToDo extends Component {
   constructor() {
@@ -54,6 +54,7 @@ class ToDo extends Component {
 
   render() {
     const toDos = this.getToDos();
+    if(!toDos) return null;
     return (
       <ul id="list" className="list">
         {toDos.map((todo, index) =>
