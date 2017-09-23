@@ -11,13 +11,17 @@ h2 {
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #67493D;
+  opacity: 0.3;
 }
 ::-moz-placeholder { /* Firefox 19+ */
   color: #67493D;
+  opacity: 0.3;
 }
 :-ms-input-placeholder { /* IE 10+ */
   color: #67493D;
+  opacity: 0.3;
 }
 :-moz-placeholder { /* Firefox 18- */
   color: #67493D;
+  opacity: 0.3;
 }
