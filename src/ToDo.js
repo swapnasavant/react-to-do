@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
-import './todo.css';
+import './styles/todo.css';
 
 class ToDo extends Component {
+  constructor() {
+   super();
+   this.state = {
+     tmp : '',
+   }
+  }
+
   getToDos() {
     if (typeof(Storage) !== "undefined") {
       const todos = JSON.parse(sessionStorage.getItem("todos"));
@@ -14,19 +21,33 @@ class ToDo extends Component {
   handleComplete(index) {
     if (typeof(Storage) !== "undefined") {
       const todos = JSON.parse(sessionStorage.getItem("todos"));
-      const todo = todos.filter(todo => todo.index === index).complete = true;
-      return todos;
-    } else {
-      return [];
+      const todo = todos.filter(todo => todo.index === index);
+      todo[0].complete = true;
+      sessionStorage.setItem("todos", JSON.stringify(todos));
     }
+    this.setState({ tmp: ''});
+  }
+
+  handleDelete(index) {
+    if (typeof(Storage) !== "undefined") {
+      const todos = JSON.parse(sessionStorage.getItem("todos"));
+      todos.splice(index, 1);
+      sessionStorage.setItem("todos", JSON.stringify(todos));
+    }
+    this.setState({ tmp: ''});
   }
 
   renderToDo(todo, index) {
+    const todotext = todo.complete ? 'todotext complete' : 'todotext';
+    const todoList = todo.complete ? 'todo completetodo' : 'todo';
     return (
-      <li className="todo" key={index}>
-        <span className="cross"></span>
+      <li
+        className={todoList}
+        key={index}
+      >
+        <span className="cross" onClick={this.handleDelete.bind(this, index)}></span>
         <span className="tick" onClick={this.handleComplete.bind(this, index)}></span>
-        <span className="todotext"> {todo.text}</span>
+        <span className={todotext}> {todo.text}</span>
       </li>
     );
   }

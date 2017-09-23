@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
+import './styles/App.css';
+import './styles/logo.css';
 import ToDos from './ToDos';
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
+          <span className="logo" />
           <h2>To Do List</h2>
         </div>
         <div className="App-Content">

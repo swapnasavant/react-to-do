@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   color: white;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #3B3D4C;
   height: 50px;
 }
 

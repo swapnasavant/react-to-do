@@ -1,0 +1,46 @@
+ .logo {
+  display: inline-block;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+  background-color: #f3cc0c;
+  -webkit-transition: 0.25s ease-in-out all;
+  -moz-transition: 0.15s ease-in-out all;
+  -o-transition: 0.15s ease-in-out all;
+  transition: 0.15s ease-in-out all;
+  -moz-border-radius: 0 0 20px 0;
+  -webkit-border-radius: 0 0 20px 0;
+  border-radius: 0 0 20px 0;
+}
+
+.logo:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 30;
+  -moz-box-shadow: -5px 2px 5px rgba( 0, 0, 0, 0.3 );
+  -webkit-box-shadow: -5px 2px 5px rgba( 0, 0, 0, 0.3 );
+  box-shadow: -5px 2px 5px rgba( 0, 0, 0, 0.3 );
+  -webkit-transition: 0.25s ease-in-out all;
+  -moz-transition: 0.15s ease-in-out all;
+  -o-transition: 0.15s ease-in-out all;
+  transition: 0.15s ease-in-out all;
+}
+
+.logo:after {
+  width: 15px;
+  height: 15px;
+  -webkit-transform: rotate(-10deg) translate3d( 0, 0, 0 );
+  -moz-transform: rotate(-10deg) translate3d( 0, 0, 0 );
+  -o-transform: rotate(-10deg) translate3d( 0, 0, 0 );
+  transform: rotate(-10deg) translate3d( 0, 0, 0 );
+}
+
+.logo:before {
+  content:"\2713";
+  font-size: 30px;
+}

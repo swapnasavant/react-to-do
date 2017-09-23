@@ -8,9 +8,15 @@ nav.notepad {
     width: 68%;
 }
 .addtodo {
-    font-size: 30px;
-    width: 95%;
-    background-color: #FFFFFF;
+  font-size: 30px;
+  width: 95%;
+  background-color: #FFFFFF;
+  border: 1px solid #981F00;
+  box-shadow: 3px 2px 3px #981F00;
+  background-color: #FFFFFF;
+  margin: 5px;
+  font-size: 25px;
+  text-align: center;
 }
 .actionstodo {
     display: inline-block;
@@ -24,7 +30,7 @@ nav.notepad {
 }
 .tick::before {
     content: "\2713";
-    color: #003d3d;
+    color: #66513C;
 }
 .cross,
 .tick {
@@ -35,12 +41,12 @@ nav.notepad {
 }
 .cross:before {
     content: "\2717";
-    color: #3f0000;
+    color: #982001;
 }
 /* Get one TO DO list with appropriate style */
 
 ul.list li.completetodo {
-    background: #cfc none repeat scroll 0 0;
+    background: #7DCBBF none repeat scroll 0 0;
 }
 ul.list {
     background-color: #f2dc99;
