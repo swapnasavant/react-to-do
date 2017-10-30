@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './styles/App.css';
-import './styles/Logo.css';
+import './styles/logo.css';
 import ToDos from './ToDos';
 
 class App extends Component {
