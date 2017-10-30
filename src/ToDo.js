@@ -42,7 +42,6 @@ class ToDo extends Component {
     const todoList = todo.complete ? 'todo completetodo' : 'todo';
     return (
       <li
-        className={todoList}
         key={index}
       >
         <span className="cross" onClick={this.handleDelete.bind(this, index)}></span>
